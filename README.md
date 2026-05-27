@@ -37,7 +37,7 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 
 ## 3.) Development Logs
 Rough: 
-28/05/26 -
+28/05/26 2:25 AM - Refined Documentation
 
 ### 3.1)  Research Links:
 | Date        | Link          | Note |
