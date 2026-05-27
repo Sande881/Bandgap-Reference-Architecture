@@ -27,13 +27,13 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 ### 2.3) Constraints & Limitations:
 *Stacking transistors in the wide-swing cascode always eats into your voltage headroom. Since the target output is $\approx 1.2\text{V}$ and the standard SkyWater 130nm core supply is typically 1.8V, you only have about 600mV of headroom left for the biasing network to operate.
 
-*Because we take parasitic vertical BJTs (formed naturally inside the CMOS wells) rather than dedicated BJTs, they suffer from high substrate resistance, lower current gain, and higher susceptibility to process variations.
+* Because we take parasitic vertical BJTs (formed naturally inside the CMOS wells) rather than dedicated BJTs, they suffer from high substrate resistance, lower current gain, and higher susceptibility to process variations.
 
-*At 130nm, global process corners (Fast-Fast, Slow-Slow) can heavily skew the PTAT/CTAT balance.
+* At 130nm, global process corners (Fast-Fast, Slow-Slow) can heavily skew the PTAT/CTAT balance.
 
-*If the start up network is not designed carefully, the startup circuit might not turn off completely after initialization. This can introduce leakage currents, degrading the final PSRR, and increasing static power consumption.
+* If the start up network is not designed carefully, the startup circuit might not turn off completely after initialization. This can introduce leakage currents, degrading the final PSRR, and increasing static power consumption.
 
-*PSRR may degrade due to internal node capacitances acting as low-impedance paths for high frequency noise, degrading the protective isolation of the current mirrors.
+* PSRR may degrade due to internal node capacitances acting as low-impedance paths for high frequency noise, degrading the protective isolation of the current mirrors.
 
 ## 3.) Development Logs
 Rough: 
