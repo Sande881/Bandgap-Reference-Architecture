@@ -25,7 +25,7 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 ### 2.2) Software:
 * VMWare, running Ubuntu 26.04 LTS.
 ### 2.3) Constraints & Limitations:
-*Stacking transistors in the wide-swing cascode always eats into your voltage headroom. Since the target output is $\approx 1.2\text{V}$ and the standard SkyWater 130nm core supply is typically 1.8V, you only have about 600mV of headroom left for the biasing network to operate.
+* Stacking transistors in the wide-swing cascode always eats into your voltage headroom. Since the target output is $\approx 1.2\text{V}$ and the standard SkyWater 130nm core supply is typically 1.8V, you only have about 600mV of headroom left for the biasing network to operate.
 
 * Because we take parasitic vertical BJTs (formed naturally inside the CMOS wells) rather than dedicated BJTs, they suffer from high substrate resistance, lower current gain, and higher susceptibility to process variations.
 
