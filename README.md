@@ -51,7 +51,6 @@ Rough:
 ### 3.3) Issues & Solutions:
 
 ## 4) Development Process
-Week 1:
 With the complete installation of IIC-OSIC-TOOLS onto Ubuntu, design work begins. The Architecture is designed using Behzad Razavi's Design of Analog CMOS Integrated Circuits.
 
    
