@@ -1,3 +1,3 @@
 V<sub>th</sub> =
 
-&mu;C<sub>ox</sub>= 5.800941e-11
+&mu;C<sub>ox</sub>= 5.800941 x 10<sup>-11</sup>
