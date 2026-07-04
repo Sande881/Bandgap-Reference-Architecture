@@ -11,7 +11,7 @@ symbol taken: sky130_fd_pr/nfet_01v8_nf.sym
 
 * Threshold Voltage (V<sub>th</sub>) = -390.54 mV
 * &micro;C<sub>ox</sub>= 75.3546 &mu;A/V²
-* Output Resistance (r<sub>o</sub>) = 161.25 M&Omega;
-* Channel Length Modulation Parameter (&lambda;) = 0.013 V<sup>-1</sup>
+* Output Resistance (r<sub>o</sub>) = 2.33 M&Omega;
+* Channel Length Modulation Parameter (&lambda;) = 0.0115 V<sup>-1</sup>
 
 
