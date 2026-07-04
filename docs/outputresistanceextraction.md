@@ -1,5 +1,5 @@
-/* SkyWater 130nm PMOS Characterization Testbench
-/* Error-Free Windowed Ro and Lambda Extraction
+*SkyWater 130nm PMOS Characterization Testbench
+*Error-Free Windowed Ro and Lambda Extraction
 
 .options scale=1u
 .lib /foss/pdks/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/combined/sky130.lib.spice tt
@@ -19,14 +19,11 @@ VDS drain 0 DC=-1.2
 VGS gate  0 DC=-1.5
 
 .control
-  * Sweep VDS strictly from -1.0V to -1.4V with a 0.2V step
-  * This creates an array containing exactly 3 data rows: [-1.0V, -1.2V, -1.4V]
+*Sweep VDS strictly from -1.0V to -1.4V with a 0.2V step
+*This creates an array containing exactly 3 data rows: [-1.0V, -1.2V, -1.4V]
   dc VDS -1.0 -1.4 -0.2
   
-  * Extract currents using precise array index mapping
-  * Index [0] corresponds to VDS = -1.0V
-  * Index [1] corresponds to VDS = -1.2V (Nominal operating point)
-  * Index [2] corresponds to VDS = -1.4V
+*Extract currents using precise array index mapping
   let id_point1 = abs(i(VDS)[0])
   let id_nominal = abs(i(VDS)[1])
   let id_point2 = abs(i(VDS)[2])
@@ -34,7 +31,6 @@ VGS gate  0 DC=-1.5
   * --- TWO-POINT MACROSCOPIC EXTRACTION MATH ---
   let delta_v = abs(-1.4 - (-1.0))
   let delta_i = abs(id_point2 - id_point1)
-  
   let ro_realistic = delta_v / delta_i
   let lambda_realistic = 1.0 / (ro_realistic * id_nominal)
 
