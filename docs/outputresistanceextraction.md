@@ -1,5 +1,5 @@
-* SkyWater 130nm PMOS Characterization Testbench
-* Error-Free Windowed Ro and Lambda Extraction
+/* SkyWater 130nm PMOS Characterization Testbench
+/* Error-Free Windowed Ro and Lambda Extraction
 
 .options scale=1u
 .lib /foss/pdks/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/combined/sky130.lib.spice tt
