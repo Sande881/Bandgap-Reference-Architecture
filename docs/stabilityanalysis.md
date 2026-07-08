@@ -3,6 +3,7 @@
 
 
 * code:
+
 name=zap
 
 only_toplevel=true
@@ -17,7 +18,7 @@ value="
  V_VDD VDD 0 DC=1.8
 
 .control
-  * Sweep frequency from 1 Hz up to 10 GHz (20 points per decade)
+ *Sweep frequency from 1 Hz up to 10 GHz (20 points per decade)
   ac dec 20 1 10g
   
   let loop_gain = v(vin)/v(vgate)
