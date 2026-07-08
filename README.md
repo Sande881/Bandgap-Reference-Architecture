@@ -13,7 +13,7 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
   
 * A dedicated circuit designed to kick the reference out of its degenerate "zero-current" state during supply power-up, guaranteeing self-initialization.
 
-* High-Fidelity Device modelling by moving away from simplistic square-law approximations by explicitly accounting for channel-length variations ($\lambda$ or $r_o$) during the initial analytical design phase.
+* Device modelling by moving away from simplistic square-law approximations by explicitly accounting for channel-length variations ($\lambda$ or $r_o$) during the initial analytical design phase.
 
 * Achieves a Temperature Coefficient (TC) of $\le$ 20 ppm/°C.
 
