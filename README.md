@@ -11,7 +11,7 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 
 * Designed using the open-source SkyWater 130nm PDK, as it integrates seamlessly with free, open-source EDA toolchains.
   
-* A dedicated circuit designed to kick the reference out of its degenerate "zero-current" state during supply power-up, guaranteeing self-initialization.
+* A dedicated circuit designed to kick the reference out of its "zero-current" state during supply power-up, guaranteeing self-initialization.
 
 * Device modelling by moving away from simplistic square-law approximations by explicitly accounting for channel-length variations ($\lambda$ or $r_o$) during the initial analytical design phase.
 
