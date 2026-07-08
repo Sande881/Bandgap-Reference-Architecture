@@ -20,12 +20,8 @@ V_VDD VDD 0 DC=1.8
   let delta_vbg = max_vbg - min_vbg
   let temp_co = (delta_vbg / (vbg_room * 165)) * 1e6
 
-  echo ==========================================================
-  echo          EXTRACTED SKY130 BGR CELL METRICS                
-  echo ==========================================================
   print vbg_room
   print temp_co
-  echo ==========================================================
   
   plot v(vbg)
 .endc
