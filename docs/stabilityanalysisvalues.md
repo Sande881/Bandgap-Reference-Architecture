@@ -1,8 +1,8 @@
-## * Initial Analysis:
+## Initial Analysis:
 
 <img width="1000" height="500" alt="sub-optimalstabilityanalysis" src="https://github.com/user-attachments/assets/bbcf16ee-5543-4779-80fc-4eda6af986d4" />
 
-## * Applying dominant pole:
+## Applying dominant pole:
 
 We apply a RC circuit at the VCVS to give it a finite bandwidth and internal resistance similar to that of a real-world Op-Amp.
 
