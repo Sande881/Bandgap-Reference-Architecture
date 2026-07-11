@@ -51,7 +51,7 @@ Rough:
 ### 3.3) Issues & Solutions:
 
 ## 4) Development Process
-With the complete installation of IIC-OSIC-TOOLS onto Ubuntu, design work begins. The Architecture is designed using Behzad Razavi's Design of Analog CMOS Integrated Circuits.
+With the complete installation of IIC-OSIC-TOOLS onto Ubuntu, drafting of the core BGR Architecture is done by taking reference from Behzad Razavi's Design of Analog CMOS Integrated Circuits.
 
    
 
