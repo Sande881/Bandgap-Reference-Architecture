@@ -5,7 +5,7 @@
 An Analog-to-Digital Converter (ADC) is dependent upon the accuracy of it's reference voltage. A shift in temperature, or process, affects the reference voltage, resulting in the decrease of precision in the ADC. This project hopes to achieve the creation of a Bandgap Reference Circuit that will reasonably resist this shift and provide a constant refernce voltage.
 
 ### 1.2) Objectives
-This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-Temperature (PTAT) and Complementary-to-Absolute-Temperature (CTAT) current profiles to produce a stable nominal output of ≈ 1.2V. It will implement an active startup network to guarantee state transition out of the degenerate zero-current operating point upon supply power-up, and wide-swing cascode current mirrors to translate and distribute precise bias currents across external system loads. 
+This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-Temperature (PTAT) and Complementary-to-Absolute-Temperature (CTAT) current profiles to produce a stable nominal output of ≈ 1.2V. It will implement an active startup network to guarantee state transition out of the zero-current operating point upon supply power-up, and wide-swing cascode current mirrors to translate and distribute precise bias currents across external system loads. 
 
 ### 1.3) Key Features
 
