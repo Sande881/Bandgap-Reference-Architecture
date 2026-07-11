@@ -2,7 +2,7 @@
 
 
 
-* code:
+code:
 
 name=zap
 
