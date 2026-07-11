@@ -4,6 +4,11 @@ Unoptimized BGR Cell Values:
 * Temperature Coefficient = 53.58752 ppm/&deg;C
 
 
+
+
+
+
+
 BGR Cell (Iteration 1) Values:
 
 Gain changed to 100, Added a startup circuit
