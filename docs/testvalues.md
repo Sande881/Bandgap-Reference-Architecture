@@ -1,4 +1,4 @@
-Unoptimized BGR Cell Values:
+## Unoptimized BGR Cell Values:
 
 * BGR Voltage at 27&deg;C = 1.669081 V
 * Temperature Coefficient = 53.58752 ppm/&deg;C
@@ -9,7 +9,7 @@ Unoptimized BGR Cell Values:
 
 
 
-BGR Cell (Iteration 1) Values:
+## BGR Cell (Iteration 1) Values:
 
 Gain changed to 100, Added a startup circuit
 
