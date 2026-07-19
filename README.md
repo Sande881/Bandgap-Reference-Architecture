@@ -93,7 +93,7 @@ $$\frac{R_2}{R_1}  \approx \mathbf{8.272}$$
 
 $$\vert{}I_{D4}\vert{} = \frac{1}{R_2} \left( \vert{}V_{BE1}\vert{} + 17.2 \cdot V_T \right) \implies R_2  = \mathbf{109.55 \text{ k}\Omega}$$
 
-$R_2 = R_3 = mathbf{109.55 \text{ k}\Omega}$
+$R_2 = R_3 = \mathbf{109.55 \text{ k}\Omega}$
 
 $R_1 = 13.24 kΩ$
 
