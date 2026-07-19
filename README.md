@@ -51,10 +51,8 @@ Rough:
 ### 3.3) Issues & Solutions:
 
 ## 4) Development Process
-With the complete installation of IIC-OSIC-TOOLS onto Ubuntu, drafting of the core BGR Architecture is done by taking reference from Behzad Razavi's Design of Analog CMOS Integrated Circuits.
-
 Week 1:
-First we obtain the process and device characteristics of the NMOS and PMOS we are to use. The transistor models, from which we shall extract characteristics, are:
+First, we obtain the process and device characteristics of the NMOS and PMOS we are to use. The transistor models, from which we shall extract characteristics, are:
 - sky130_fd_pr/nfet_01v8_nf.sym
 - sky130_fd_pr/pfet_01v8_nf.sym
 
@@ -76,7 +74,21 @@ doing the same for the pfet model, we get the following parameters:
 * Output Resistance (r<sub>o</sub>) = 2.33 M&Omega;
 * Channel Length Modulation Parameter (&lambda;) = 0.0115 V<sup>-1</sup>
 
-Using these parameters, we can do some hand-calculations to 
+The core BGR Cell will be drafted from Behzad Razavi's Design of Analog CMOS Integrated Circuits, the calculations and circuit are shown here:
+
+$I_{Q1} = I_{Q2}$ if $R_2 = R_3$. We also have $\vert{}V_{BE1}\vert{} = \vert{}V_{BE2}\vert{} + I_{C2}R_1$ and hence $I_{C2} = V_T \ln n / R_1$.
+
+* N = 8
+
+$$\vert{}I_{D4}\vert{} =  \frac{1}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2}{R_1} V_T \ln n \right) \tag{12.68}$$
+
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/10706b4b-4606-4ca5-b36d-3a2fbee61dae" />
+
+
+
+
+
+
   
   
 
