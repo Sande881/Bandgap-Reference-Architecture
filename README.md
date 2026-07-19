@@ -74,13 +74,34 @@ doing the same for the pfet model, we get the following parameters:
 * Output Resistance (r<sub>o</sub>) = 2.33 M&Omega;
 * Channel Length Modulation Parameter (&lambda;) = 0.0115 V<sup>-1</sup>
 
-The core BGR Cell will be drafted from Behzad Razavi's Design of Analog CMOS Integrated Circuits, the calculations and circuit are shown here:
+The core BGR Cell will be drafted from Behzad Razavi's Design of Analog CMOS Integrated Circuits,
+
+Equations:
 
 $I_{Q1} = I_{Q2}$ if $R_2 = R_3$. We also have $\vert{}V_{BE1}\vert{} = \vert{}V_{BE2}\vert{} + I_{C2}R_1$ and hence $I_{C2} = V_T \ln n / R_1$.
 
-* N = 8
-
 $$\vert{}I_{D4}\vert{} =  \frac{1}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2}{R_1} V_T \ln n \right) \tag{12.68}$$
+
+$$V_{BG} = \frac{R_4}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2}{R_1} V_T \ln n \right) \tag{12.69}$$
+
+$$\frac{R_2}{R_1} \ln(n) = 17.2$$  (Zero Temperature-Coefficient Condition)
+
+Calculations:
+n = 8 and choosing I<sub>D4</sub> as 10 &mu;A, we get
+
+$$\frac{R_2}{R_1}  \approx \mathbf{8.272}$$
+
+$$\vert{}I_{D4}\vert{} = \frac{1}{R_2} \left( \vert{}V_{BE1}\vert{} + 17.2 \cdot V_T \right) \implies R_2  = \mathbf{109.55 \text{ k}\Omega}$$
+
+$R_2 = R_3 =$ 109.55 kΩ
+
+$R_1 =$ 13.24 kΩ
+
+$$V_{BG} = \frac{R_4}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2}{R_1} V_T \ln(n) \right) \implies \frac{R_4}{R_2} \approx \mathbf{1.0954}$$
+
+$$R_4 \approx \mathbf{120.0 \text{ k}\Omega}$$
+
+Circuit:
 
 <img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/10706b4b-4606-4ca5-b36d-3a2fbee61dae" />
 
