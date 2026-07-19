@@ -44,7 +44,7 @@ Rough:
 | ------------- |:-------------:| -----:|
 | 28/05/26     | http://opencircuitdesign.com/analog_flow/    |  Open-Source Analog IC Design Flow  |
 | 28/05/26     | https://github.com/iic-jku/IIC-OSIC-TOOLS#4-quick-launch-for-designers      |   IIC-OSIC-TOOLS Docker Image  |
-|      |      |      |
+| 16/06/26     | https://patents.google.com/patent/US20170012609A1/en     |  Reference design for the startup circuit    |
 
 ### 3.2) Key Decisions & Changes:
 
@@ -52,6 +52,34 @@ Rough:
 
 ## 4) Development Process
 With the complete installation of IIC-OSIC-TOOLS onto Ubuntu, drafting of the core BGR Architecture is done by taking reference from Behzad Razavi's Design of Analog CMOS Integrated Circuits.
+
+Week 1:
+First we obtain the process and device characteristics of the NMOS and PMOS we are to use. The transistor models, from which we shall extract characteristics, are:
+- sky130_fd_pr/nfet_01v8_nf.sym
+- sky130_fd_pr/pfet_01v8_nf.sym
+
+The circuit is set up in the following manner:
+
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/90e0ad4e-3831-47af-ae01-5371e866b50f" />
+
+Performing the required ngspice simulation, we get the follow parameters:
+
+* Threshold Voltage (V<sub>th</sub>) = 368.4887 mV
+* &micro;C<sub>ox</sub>= 58.00941 &mu;A/V²
+* Output Resistance (r<sub>o</sub>) = 164.92 k&Omega;
+* Channel Length Modulation Parameter (&lambda;) = 0.052 V<sup>-1</sup>
+
+doing the same for the pfet model, we get the following parameters:
+
+* Threshold Voltage (V<sub>th</sub>) = -390.54 mV
+* &micro;C<sub>ox</sub>= 75.3546 &mu;A/V²
+* Output Resistance (r<sub>o</sub>) = 2.33 M&Omega;
+* Channel Length Modulation Parameter (&lambda;) = 0.0115 V<sup>-1</sup>
+
+Using these parameters, we can do some hand-calculations to 
+  
+  
+
 
    
 
