@@ -84,7 +84,9 @@ $$\vert{}I_{D4}\vert{} =  \frac{1}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2
 
 $$V_{BG} = \frac{R_4}{R_2} \left( \vert{}V_{BE1}\vert{} + \frac{R_2}{R_1} V_T \ln n \right) \tag{12.69}$$
 
-$$\frac{R_2}{R_1} \ln(n) = 17.2$$   (Zero Temperature-Coefficient Condition)
+Zero Temperature-Coefficient Condition
+
+$$\frac{R_2}{R_1} \ln(n) = 17.2$$  
 
 Calculations:
 n = 8 and choosing I<sub>D4</sub> as 10 &mu;A, we get
