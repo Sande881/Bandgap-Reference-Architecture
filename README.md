@@ -35,23 +35,16 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 
 * PSRR may degrade due to internal node capacitances acting as low-impedance paths for high frequency noise, degrading the protective isolation of the current mirrors.
 
-## 3.) Development Logs
-Rough: 
-28/05/26 2:25 AM - Refined Documentation
-
-### 3.1)  Research Links:
+## 3)  Research Links:
 | Date        | Link          | Note |
 | ------------- |:-------------:| -----:|
 | 28/05/26     | http://opencircuitdesign.com/analog_flow/    |  Open-Source Analog IC Design Flow  |
 | 28/05/26     | https://github.com/iic-jku/IIC-OSIC-TOOLS#4-quick-launch-for-designers      |   IIC-OSIC-TOOLS Docker Image  |
 | 16/06/26     | https://patents.google.com/patent/US20170012609A1/en     |  Reference design for the startup circuit    |
 
-### 3.2) Key Decisions & Changes:
-
-### 3.3) Issues & Solutions:
-
 ## 4) Development Process
 Week 1:
+
 First, we obtain the process and device characteristics of the NMOS and PMOS we are to use. The transistor models, from which we shall extract characteristics, are:
 - sky130_fd_pr/nfet_01v8_nf.sym
 - sky130_fd_pr/pfet_01v8_nf.sym
@@ -107,6 +100,9 @@ $R_4 \approx \mathbf{120.0 \text{ k}\Omega}$
 Circuit:
 
 <img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/10706b4b-4606-4ca5-b36d-3a2fbee61dae" />
+
+Week 2:
+
 
 
 
