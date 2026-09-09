@@ -6,4 +6,4 @@
   
 * When performing Ramping of Supply voltage VDD to check that the startup circuit safely brings the BGR upto 1.2 V and detaches once it reaches 1.2V, the Bandgap Reference Voltage spikes to -120 V in the transient analysis when a Fast ramp of 100 ns is performed, acting like a voltage spike. This is because the SPICE environment uses Trapezoid Integration by default for simulation, which doesn't fare well against sharp edges (a lack of "L-Stability"). For this, I had to switch to gear integration to accurately simulate the nature of the circuit against fast and slow ramping of VDD.
 
-* 
+* Rebuilt startup circuit to use a inverter-like topology. Circuit does not completely detach at the point it's supposed to, some changes to be made to the startup circuit.
