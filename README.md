@@ -40,7 +40,6 @@ This BGR shall Utilize parasitic vertical BJTs to sum Proportional-to-Absolute-T
 | ------------- |:-------------:| -----:|
 | 28/05/26     | http://opencircuitdesign.com/analog_flow/    |  Open-Source Analog IC Design Flow  |
 | 28/05/26     | https://github.com/iic-jku/IIC-OSIC-TOOLS#4-quick-launch-for-designers      |   IIC-OSIC-TOOLS Docker Image  |
-| 16/06/26     | https://patents.google.com/patent/US20170012609A1/en     |  Reference design for the startup circuit    |
 
 ## 4) Development Process
 Week 1:
